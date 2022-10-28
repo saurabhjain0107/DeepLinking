@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FBF4F1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/googleSearch"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:backgroundTint="#A69A9A"
+        android:text="Google Search"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <ImageView
+        android:id="@+id/wikipedia"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="#4D566A"
+        android:backgroundTint="#606EB8"
+        android:foregroundGravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/googleSearch"
+        app:layout_constraintStart_toStartOf="@+id/googleSearch"
+        app:srcCompat="@android:drawable/btn_minus"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#CF0F1F"
+        android:text="Youtube"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/googleSearch"
+        app:layout_constraintStart_toStartOf="@+id/googleSearch"
+        tools:layout_editor_absoluteY="263dp" />
+</LinearLayout>
